@@ -4,25 +4,27 @@ def tabuada():
 		
 		print(f' Multiplicação {'[X]':>5}\n Divisão{'[/]':>12}\n Subtração{'[-]':>10}\n Adição{'[+]':>13}')
 		função = str(input(f'Vai ser uma tabuada de: ').strip().upper()) 
-		if função == 'X':
-			print ('-'*17,'Multiplicaçao selecionado','-'*17)
-			X()
-			break
-		elif função == '/':
-			print ('-'*17,'Divisão selecionada','-'*17)
-			Div()
-			break
-		elif função == '-':
-			print ('-'*17,'Subtração selecionado','-'*17)
-			Sub()
-			break
-		elif função == '+':
-			print ('-'*17,'Adição selecionada','-'*17)
-			Adi()
-			break
-		else:
-			print('Numero invalido tente novamente')
-			continue
+		match função:
+			
+			case 'X':
+				print ('-'*17,'Multiplicaçao selecionado','-'*17)
+				X()
+				break
+			case '/':
+				print ('-'*17,'Divisão selecionada','-'*17)
+				Div()
+				break
+			case '-':
+				print ('-'*17,'Subtração selecionado','-'*17)
+				Sub()
+				break
+			case '+':
+				print ('-'*17,'Adição selecionada','-'*17)
+				Adi()
+				break
+			case _:
+				print('Numero invalido tente novamente')
+				continue
 
 
 def X(): #multiplicação
@@ -30,6 +32,7 @@ def X(): #multiplicação
 		try:
 			base = int(input('Escolha um número: ').strip())
 			final = int(input('Tabuada de 1 ao: ').strip())
+			print('#' * 17)
 		except:
 			print('Numero invalido tente novamente')
 			continue
@@ -45,6 +48,7 @@ def Div(): #divisão
                 try:
                         base = int(input('Escolha um número: ').strip())
                         final = int(input('Tabuada de 1 ao: ').strip())
+                        print('#' * 17)
                 except:
                         print ('Numero invalido tente novamente')
                         continue
@@ -60,6 +64,7 @@ def Sub(): 			#subtração
                 try:
                         base = int(input('Escolha um número: ').strip())
                         final = int(input('Tabuada de 1 ao: ').strip())
+                        print('#' * 17)
                 except:
                         print('Numero invalido tente novamente')
                         continue
@@ -75,6 +80,7 @@ def Adi():                      #adição
                 try:
                         base = int(input('Escolha um número: ').strip())
                         final = int(input('Tabuada de 1 ao: ').strip())
+                        print('#' * 17)
                 except:
                         print('Numero invalido tente novamente')
                         continue
