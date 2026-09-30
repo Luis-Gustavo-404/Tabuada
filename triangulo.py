@@ -25,10 +25,3 @@ def hipotenusa():
 		
 		return calculo, pergunta
 
-iniciar = input('INIAR: ')
-
-if iniciar == '0':
-	ini, pergunta = hipotenusa()
-	print('o resultado é',ini,'esse é o valor da:', pergunta)
-else:
-	exit()

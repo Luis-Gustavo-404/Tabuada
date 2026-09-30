@@ -99,8 +99,8 @@ while True: # Iniciar programa
 		break
 	elif iniciar == '1':
 		from triangulo import hipotenusa
-		a, b = hipotenusa()
-		print('o valor é',a ,'aaaa',b)
+		valor, lado = hipotenusa()
+		print('#'*17,f'\n|{lado}: tem o valor de {valor:.2f}|\n','#'*17	)
 
 	else:
 		tabuada()
