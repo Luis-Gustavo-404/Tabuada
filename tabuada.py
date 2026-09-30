@@ -23,7 +23,7 @@ def tabuada():
 				Adi()
 				break
 			case _:
-				print('Numero invalido tente novamente')
+				print('Numero inválido tente novamente')
 				continue
 
 
@@ -34,7 +34,7 @@ def X(): #multiplicação
 			final = int(input('Tabuada de 1 ao: ').strip())
 			print('#' * 17)
 		except:
-			print('Numero invalido tente novamente')
+			print('Numero inválido tente novamente')
 			continue
 		for final in range(1,final+1):
 			alinha = int(len(str(base))) + 1
@@ -50,7 +50,7 @@ def Div(): #divisão
                         final = int(input('Tabuada de 1 ao: ').strip())
                         print('#' * 17)
                 except:
-                        print ('Numero invalido tente novamente')
+                        print ('Numero inválido tente novamente')
                         continue
                 for final in range(1,final+1):
                         alinha = int(len(str(base))) + 1
@@ -66,7 +66,7 @@ def Sub(): 			#subtração
                         final = int(input('Tabuada de 1 ao: ').strip())
                         print('#' * 17)
                 except:
-                        print('Numero invalido tente novamente')
+                        print('Numero inválido tente novamente')
                         continue
                 for final in range(1,final+1):
                         alinha = int(len(str(base))) + 1
@@ -82,7 +82,7 @@ def Adi():                      #adição
                         final = int(input('Tabuada de 1 ao: ').strip())
                         print('#' * 17)
                 except:
-                        print('Numero invalido tente novamente')
+                        print('Numero inválido tente novamente')
                         continue
                 for final in range(1,final+1):
                         alinha = int(len(str(base))) + 1
@@ -93,10 +93,15 @@ def Adi():                      #adição
 
 while True: # Iniciar programa
 	print ('#'*17)
-	iniciar = input('Qualquer tecla para Iniciar a Tabuada\n Pressione [0] para sair: ')
+	iniciar = input('Pressione qualquer tecla para Iniciar a Tabuada\n Pressione [0] para sair: ')
 
 	if iniciar == '0':
 		break
+	elif iniciar == '1':
+		from triangulo import hipotenusa
+		a, b = hipotenusa()
+		print('o valor é',a ,'aaaa',b)
+
 	else:
 		tabuada()
 		continue
