@@ -27,7 +27,8 @@ def tabuada():
 				continue
 
 
-def X(): #multiplicação
+
+def X(): 			#multiplicação
 	while True:	
 		try:
 			base = int(input('Escolha um número: ').strip())
@@ -43,7 +44,8 @@ def X(): #multiplicação
 		break
 
 
-def Div(): #divisão
+
+def Div():			 #divisão
         while True:     
                 try:
                         base = int(input('Escolha um número: ').strip())
@@ -57,6 +59,7 @@ def Div(): #divisão
                         calculo = base / final
                         print(f"| {base} ÷ {final:>2} = {calculo:>{alinha}.2f} |")
                 break
+
 
 
 def Sub(): 			#subtração
@@ -75,6 +78,7 @@ def Sub(): 			#subtração
                 break
 
 
+
 def Adi():                      #adição
         while True:     
                 try:
@@ -91,17 +95,20 @@ def Adi():                      #adição
                 break
 
 
+
 while True: # Iniciar programa
 	print ('#'*17)
 	iniciar = input('[1] Tabuada\n[2] Hipotenusa \n[0] Para sair\n ----:   ')
 
+
 	if iniciar == '1':
 		tabuada()
 
-	elif iniciar == '2':
-		from triangulo import hipotenusa
+
+	elif iniciar == '2':   #Hipotenusa
+		from triangulo import hipotenusa #Chama a função 
 		valor, lado = hipotenusa()
 		print('#'*17,f'\n|{lado}: tem o valor de {valor:.2f}|\n')
 
 	else:
-		break
+		break #acabou!
