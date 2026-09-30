@@ -93,15 +93,15 @@ def Adi():                      #adição
 
 while True: # Iniciar programa
 	print ('#'*17)
-	iniciar = input('Pressione qualquer tecla para Iniciar a Tabuada\n Pressione [0] para sair: ')
+	iniciar = input('[1] Tabuada\n[2] Hipotenusa \n[0] Para sair\n ----:   ')
 
-	if iniciar == '0':
-		break
-	elif iniciar == '1':
+	if iniciar == '1':
+		tabuada()
+
+	elif iniciar == '2':
 		from triangulo import hipotenusa
 		valor, lado = hipotenusa()
-		print('#'*17,f'\n|{lado}: tem o valor de {valor:.2f}|\n','#'*17	)
+		print('#'*17,f'\n|{lado}: tem o valor de {valor:.2f}|\n')
 
 	else:
-		tabuada()
-		continue
+		break
